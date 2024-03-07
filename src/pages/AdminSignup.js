@@ -86,7 +86,7 @@ const SignUp = () => {
   //todo ========    #page control  logic   No1 =======
 
   //!chang state for testing
-  const [currentStep, setCurrentStep] = useState(5);
+  const [currentStep, setCurrentStep] = useState(8);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -1012,7 +1012,7 @@ const SignUp = () => {
               </div>
               <div className="col-12 case1">
                 <div className="container">
-                  <h2 style={{ color: "black" }}>Signup</h2>
+                  <h2 style={{ color: "black", textAlign:'center' }}>Signup</h2>
                   <p className="subtitle">Sign up your firm and start upgrading your workflow</p>
                   <br />
                   <form>
@@ -1063,7 +1063,7 @@ const SignUp = () => {
                 </div>
                 <div className="path col-10" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
                   <div className="steps" style={{ justifyContent: 'center', alignContent: 'center' }}>
-                    <MultiStage steps={totalSteps} currentStepForm={2} stageNames={stageNames} />
+                    <MultiStage steps={totalSteps} currentStepForm={1} stageNames={stageNames} />
                   </div>
                 </div>
               </div>
@@ -1217,13 +1217,17 @@ const SignUp = () => {
       case 4:
         return (
           <>
-            <div className=" col-12  ">
-              <div className="col-12" style={{ display: "flex" }}>
-                <div className="col-4" style={{ margin: "20px" }}>
-                  <img style={{ width: "30px" }} src={logo} alt="" />
-                  <b>PMS Solutions</b>
+            <div className="nav-header col-12" style={{ display: "flex" }}>
+              <div className="col-2" style={{ margin: "20px", display: 'flex' }}>
+                <div style={{ display: 'flex' }}>
+                  <div>
+                    <img style={{ width: "30px" }} src={logo} alt="" />
+                    <b>PMS Solutions</b>
+                  </div>
                 </div>
-                <div className="path col-8" style={{ marginRight: "200px" }}>
+              </div>
+              <div className="path col-10" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
+                <div className="steps" style={{ justifyContent: 'center', alignContent: 'center' }}>
                   <MultiStage steps={totalSteps} currentStepForm={2} stageNames={stageNames} />
                 </div>
               </div>
@@ -1278,13 +1282,19 @@ const SignUp = () => {
       case 5:
         return (
           <>
-            <div className="col-12" style={{ display: "flex" }}>
-              <div className="col-4" style={{ margin: "20px" }}>
-                <img style={{ width: "30px" }} src={logo} alt="" />
-                <b>PMS Solutions</b>
+             <div className="nav-header col-12" style={{ display: "flex" }}>
+              <div className="col-2" style={{ margin: "20px", display: 'flex' }}>
+                <div style={{ display: 'flex' }}>
+                  <div>
+                    <img style={{ width: "30px" }} src={logo} alt="" />
+                    <b>PMS Solutions</b>
+                  </div>
+                </div>
               </div>
-              <div className="path col-12" style={{ marginRight: "200px" }}>
-                <MultiStage steps={totalSteps} currentStepForm={2} stageNames={stageNames} />
+              <div className="path col-10" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
+                <div className="steps" style={{ justifyContent: 'center', alignContent: 'center' }}>
+                  <MultiStage steps={totalSteps} currentStepForm={2} stageNames={stageNames} />
+                </div>
               </div>
             </div>
 
@@ -1344,64 +1354,70 @@ const SignUp = () => {
       case 6:
         return (
           <>
-            <div className="col-12" style={{ display: "flex" }}>
-              <div className="col-4" style={{ margin: "20px" }}>
-                <img style={{ width: "30px" }} src={logo} alt="" />
-                <b>PMS Solutions</b>
+            <div className="nav-header col-12" style={{ display: "flex" }}>
+              <div className="col-2" style={{ margin: "20px", display: 'flex' }}>
+                <div style={{ display: 'flex' }}>
+                  <div>
+                    <img style={{ width: "30px" }} src={logo} alt="" />
+                    <b>PMS Solutions</b>
+                  </div>
+                </div>
               </div>
-              <div className="path col-12" style={{ marginRight: "200px" }}>
-                <MultiStage steps={totalSteps} currentStepForm={2} stageNames={stageNames} />
+              <div className="path col-10" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', }}>
+                <div className="steps" style={{ justifyContent: 'center', alignContent: 'center' }}>
+                  <MultiStage steps={totalSteps} currentStepForm={2} stageNames={stageNames} />
+                </div>
               </div>
             </div>
-            <div className='firmservices-container col-12' style={{ display: 'flex', width: '100%', flexWrap: 'wrap' }}>
+            <div className='firmservices-container col-12' style={{ display: 'flex', width: '100%', flexWrap: 'wrap',margin:'5%' }}>
               <div className="firmservicessub-container col-12" style={{ color: 'black', padding: '20px' }}>
-                <div className="col-12" style={{ textAlign: 'left', marginBottom: '20px', margin: '2%' }}>
+                <div className="title col-12" style={{ textAlign: 'left', marginBottom: '20px', margin: '2%' }}>
                   <h2 style={{ fontSize: '35px' }}> Services your firm offers </h2>
 
                 </div>
                 <div className='firmservices-btn col-12' style={{ display: 'flex', flexDirection: 'row', gap: '20px', margin: '2%', fontSize: '12px', paddingRight: '2%', }}>
 
 
-                  <div className='tax-preparation col-6' >
-                    <button type="button" className="button1" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.TaxPrepration ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("TaxPrepration")} ><lable> Tax preparation </lable></button>
+                  <div className='tax-preparation col-2' >
+                    <button type="button" className="button1" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '25px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.TaxPrepration ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("TaxPrepration")} ><lable> Tax preparation </lable></button>
                   </div>
 
-                  <div className='planning col-6' >
-                    <button type="button" className="button2" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.TaxPlanning ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("TaxPlanning")}><lable>Tax planning</lable></button>
+                  <div className='planning col-2' >
+                    <button type="button" className="button2" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '25px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.TaxPlanning ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("TaxPlanning")}><lable>Tax planning</lable></button>
                   </div>
 
-                  <div className='advisory col-6' >
-                    <button type="button" className="button3" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.Advisory ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("Advisory")} ><lable>Advisory</lable></button>
+                  <div className='advisory col-2' >
+                    <button type="button" className="button3" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '25px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.Advisory ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("Advisory")} ><lable>Advisory</lable></button>
                   </div>
 
-                  <div className='resolution col-6' >
-                    <button type="button" className="button4" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.Resolution ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("Resolution")} ><lable>Resolution</lable></button>
+                  <div className='resolution col-2' >
+                    <button type="button" className="button4" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '25px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.Resolution ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("Resolution")} ><lable>Resolution</lable></button>
                   </div>
 
-                  <div className='payroll col-6' >
-                    <button type="button" className="button5" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.Payroll ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("Payroll")} ><lable>Payroll</lable></button>
+                  <div className='payroll col-2' >
+                    <button type="button" className="button5" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '25px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.Payroll ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("Payroll")} ><lable>Payroll</lable></button>
                   </div>
                 </div>
 
                 <div className='second-list col-12' style={{ flexDirection: 'row', gap: '20px', marginLeft: '2%', fontSize: '12px', paddingRight: '2%', display: 'flex', width: '100%' }}>
-                  <div className='accounting col-4' >
-                    <button type="button" className="button6" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.Accounting ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("Accounting")} ><lable>Accounting</lable></button>
+                  <div className='accounting col-2' >
+                    <button type="button" className="button6" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '25px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.Accounting ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("Accounting")} ><lable>Accounting</lable></button>
                   </div>
 
-                  <div className='audit col-4' >
-                    <button type="button" className="button7" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.Audit ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("Audit")}><lable>Audit</lable></button>
+                  <div className='audit col-2' >
+                    <button type="button" className="button7" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '25px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.Audit ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("Audit")}><lable>Audit</lable></button>
                   </div>
 
-                  <div className='law-firm col-4' >
-                    <button type="button" className="button8" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.LawFirm ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("LawFirm")}><lable>Law firm</lable></button>
+                  <div className='law-firm col-2' >
+                    <button type="button" className="button8" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '25px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.LawFirm ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("LawFirm")}><lable>Law firm</lable></button>
                   </div>
 
-                  <div className='bookkeeping col-4' >
-                    <button type="button" className="button9" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.Bookkeeping ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("Bookkeeping")} ><lable>Bookeeping</lable></button>
+                  <div className='bookkeeping col-2' >
+                    <button type="button" className="button9" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '25px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.Bookkeeping ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("Bookkeeping")} ><lable>Bookeeping</lable></button>
                   </div>
 
-                  <div className='other col-4' >
-                    <button type="button" className="button10" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '5px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.Other ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("Other ")}><lable>Other</lable></button>
+                  <div className='other col-2' >
+                    <button type="button" className="button10" style={{ border: '1px solid rgb(58, 145, 245)', borderRadius: '25px', outline: 'none', height: '5vh', width: '100%', backgroundColor: buttonStates2.Other ? "#043a77" : "#3498db", color: 'white' }} onClick={() => handleButtonClick2("Other ")}><lable>Other</lable></button>
                   </div>
                 </div>
                 <div>
@@ -1597,7 +1613,7 @@ const SignUp = () => {
                       type={!passShow ? "password" : "text"} onChange={setValP} value={inppass.password} name="password" id="password" placeholder="Enter Your password"
                       style={{ height: '5vh', width: '100%', border: "1px solid rgb(100, 149, 237)", borderRadius: '10px', textAlign: 'left', fontSize: '12px' }}
                     />
-                    <div style={{ position: 'absolute', top: '70%', transform: 'translateY(-50%)', right: '20px', cursor: 'pointer' }} onClick={() => setPassShow(!passShow)} >
+                    <div style={{ position: 'absolute', top: '80%', transform: 'translateY(-50%)', right: '20px', cursor: 'pointer' }} onClick={() => setPassShow(!passShow)} >
                       {!passShow ? <FaEyeSlash /> : <FaEye />}
                     </div>
                   </div>
@@ -1611,7 +1627,7 @@ const SignUp = () => {
                       type={!cpassShow ? "password" : "text"} onChange={setValP} value={inppass.cpassword} name="cpassword" id="cpassword" placeholder="Confirm password"
                       style={{ height: '5vh', width: '100%', border: "1px solid rgb(100, 149, 237)", borderRadius: '10px', textAlign: 'left', fontSize: '12px' }}
                     />
-                    <div style={{ position: 'absolute', top: '70%', transform: 'translateY(-50%)', right: '20px', cursor: 'pointer' }} onClick={() => setCPassShow(!cpassShow)}>
+                    <div style={{ position: 'absolute', top: '80%', transform: 'translateY(-50%)', right: '20px', cursor: 'pointer' }} onClick={() => setCPassShow(!cpassShow)}>
                       {!cpassShow ? <FaEyeSlash /> : <FaEye />}
                     </div>
                   </div>
@@ -1635,11 +1651,11 @@ const SignUp = () => {
                 <b>PMS Solutions</b>
               </div>
               <div className="path col-12" style={{ marginRight: "200px" }}>
-                <MultiStage steps={totalSteps} currentStepForm={2} stageNames={stageNames} />
+                <MultiStage steps={totalSteps} currentStepForm={4} stageNames={stageNames} />
               </div>
             </div>
             <div className='datepicker-container col-12' style={{ display: 'flex', }}>
-              <div className="firmleft-container col-12" style={{ color: 'black', padding: '20px', width: '50%', border: '0.5px solid #AFDBF5' }}>
+              <div className="firmleft-container col-12" style={{ color: 'black', padding: '20px', width: '50%', border: '0.5px solid grey' }}>
                 <div className="h1-container col-12" style={{ textAlign: 'left', marginBottom: '20px', margin: '2%' }}>
                   <h1 style={{ fontSize: '35px' }}>Book a free implementation session</h1>
                 </div>
@@ -1678,6 +1694,7 @@ const SignUp = () => {
                           {language.name}
                         </option>
                       ))}
+                      
                     </Select>
 
 
@@ -1728,7 +1745,7 @@ const SignUp = () => {
                 <b>PMS Solutions</b>
               </div>
               <div className="path col-12" style={{ marginRight: "200px", marginBottom: '10%' }}>
-                <MultiStage steps={totalSteps} currentStepForm={2} stageNames={stageNames} />
+                <MultiStage steps={totalSteps} currentStepForm={4} stageNames={stageNames} />
               </div>
             </div>
 

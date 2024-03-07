@@ -44,6 +44,7 @@
   border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
+  width: 100%;
 }
 
 .case1 button:hover {
@@ -59,7 +60,7 @@
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     border-radius: 30px;
     text-align: center;
-    margin-right: 50px;
+
   }
 }
 
@@ -102,12 +103,12 @@
 @media screen and (max-width: 480px) {
   .case2 .container {
     width: 400px;
-    padding: 20px;
+    padding: 10px;
     /* background-color: #fff; */
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     border-radius: 30px;
     text-align: center;
-    margin-right: 50px;
+
   }
 
   .nav-header {
@@ -180,11 +181,11 @@
     border-radius: 30px;
     text-align: left;
     font-size: 15px;
-    margin-right: 20%;
+    margin-right: 5%;
   }
 
-  .case3 input{
-    width: 300px;
+  .case3 input {
+    width: 350px;
   }
 }
 
@@ -201,6 +202,7 @@
   height: 100vh;
   /* background-color: #f4f4f4; */
 }
+
 .case4 .container {
   width: 500px;
   padding: 20px;
@@ -209,6 +211,7 @@
   border-radius: 30px;
   text-align: left;
 }
+
 .case4 label {
   position: relative;
   display: block;
@@ -218,6 +221,7 @@
   color: gray;
   margin-top: 5%;
 }
+
 .case4 input {
   width: 100%;
   padding: 10px;
@@ -225,6 +229,7 @@
   border: 1px solid #ccc;
   border-radius: 10px;
 }
+
 .case4 select {
   width: 100%;
   padding: 10px;
@@ -232,6 +237,7 @@
   border: 1px solid #ccc;
   border-radius: 10px;
 }
+
 .case4 button {
   /* background-color: #4caf50; */
   background-color: rgb(86, 155, 235);
@@ -243,9 +249,11 @@
   font-size: 12px;
   margin-top: 6%;
 }
+
 .case4 button:hover {
   background-color: rgb(9, 102, 208);
 }
+
 @media screen and (max-width: 480px) {
   .case4 .container {
     width: 100%;
@@ -254,7 +262,7 @@
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     border-radius: 30px;
     text-align: left;
-    margin-right: 10%;
+    /* margin-right: 10%; */
   }
 }
 
@@ -361,14 +369,15 @@
     justify-content: left;
     /* background-color: #f4f4f4; */
   }
+
   .case6 .container {
 
     padding: 20px;
     border-radius: 30px;
     text-align: left;
   }
-  
-  
+
+
   .case6 button {
     /* background-color: #4caf50; */
     background-color: rgb(86, 155, 235);
@@ -379,81 +388,66 @@
     cursor: pointer;
     font-size: 12px;
     margin: 20px;
-    
-   
+
+
   }
+
   .case6 button:hover {
     background-color: rgb(9, 102, 208);
   }
+
   @media screen and (max-width: 480px) {
-    .case4 .container {
-      width: 400px;
-      padding: 20px;
-      /* background-color: #fff; */
-      /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-      border-radius: 30px;
-      text-align: center;
-    }
+ 
 
     .firmservices-btn {
       flex-direction: column;
       flex-wrap: wrap;
-  }
+      justify-content: center;
+    }
 
-  .firmservices-btn lable{
-      font-size: 18px;
-  }
+    .firmservices-btn lable {
+      font-size: 16px;
+    }
 
-  .button-container>div {
+    .button-container>div {
       width: 100%;
       margin-bottom: 10px;
-  }
+    }
 
-  .tax-preparation,
-  .planning,
-  .advisory,
-  .resolution,
-  .payroll,
-  .accounting,
-  .button-component {
-      width: 100%;
-      
+    .tax-preparation,
+    .planning,
+    .advisory,
+    .resolution,
+    .payroll,
+    .accounting,
+    .button-component {
+      width: 50%;
+      justify-content: center;
 
-  }
 
-  .second-list {
+    }
+
+    .second-list {
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
       margin-top: 2%
-  }
+    }
 
-  .accounting,
-  .audit,
-  .law-firm,
-  .bookkeeping,
-  .other,
-  .accounting
-  {
-      width: 100%;      
+    .accounting,
+    .audit,
+    .law-firm,
+    .bookkeeping,
+    .other,
+    .accounting {
+      width: 50%;
 
-  }
+    }
 
-  .second-list lable{
+    .second-list lable {
       font-size: 16px;
-  }
+    }
 
-  .sec-button{
-      width: 30%;
-  }
-
-  .check-box{
-      display: flex;
-  }
-
-  .check-box input lable{
-  font-size: 16px;
-  }
   }
 
   /* //todo==============================case7================= */
@@ -467,9 +461,10 @@
     cursor: pointer;
     font-size: 12px;
     margin: 20px;
-    
-   
+
+
   }
+
   .case7 button:hover {
     background-color: rgb(9, 102, 208);
   }
@@ -504,7 +499,7 @@
     /* background-color: #f4f4f4; */
   }
 
- .case8 .container {
+  .case8 .container {
     width: 800px;
     padding: 20px;
     border-radius: 30px;
@@ -512,116 +507,114 @@
     margin-left: 20%;
   }
 
-  
-
-
 
   @media screen and (max-width: 480px) {
-    .firmsetting-container {
-      flex-direction: column;
-  }
+      .case8 .firmsetting-container {
+        flex-direction: column;
+    }
 
-  .firmleft-container {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-  }
-
-
-  .urlinput {
-      width: 100%;
-  }
-
-  .outer-lable {
-      margin-top: 0%;
-  }
-
-  .currency-section {
-      flex-direction: column;
+    .firmleft-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 
 
-  }
+    .urlinput {
+        width: 100%;
+    }
 
-  .currency {
-      width: 100%;
-      margin-top: 10px;
-      font-size: 16px;
-      margin-bottom: 4%;
-      display: flex;
-      flex-direction: column;
-  }
+    .outer-lable {
+        margin-top: 0%;
+    }
 
-  .language-class {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
+    .currency-section {
+        flex-direction: column;
 
-  }
 
-  .imageright-container {
-      display: none;
+    }
 
-  }
+    .currency {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 16px;
+        margin-bottom: 4%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .language-class {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .imageright-container {
+        display: none;
+
+    }
+   
 
   }
 
 
   /* //todo==============================case9================= */
 
-  
-@media only screen and (max-width: 900px) {
-  .password-sub-container {
+
+  @media only screen and (max-width: 900px) {
+    .password-sub-container {
       margin-top: 20%;
+    }
+
+
+    .password-sub-container {
+      flex-direction: column;
+    }
   }
 
- 
-  .password-sub-container{
-      flex-direction: column;   
-  } 
-}
-
- /* //todo==============================case10================= */
+  /* //todo==============================case10================= */
 
 
- 
-@media only screen and (max-width: 900px) {
-  .firmleft-container {
-     display: none;
+
+  @media only screen and (max-width: 900px) {
+    .firmleft-container {
+      display: none;
+    }
+
+    .image-section {
+      width: 100%;
+
+    }
+
+    .time-zone-container {
+      width: 200%;
+      flex-direction: column;
+
+    }
+
+    .date-section {
+      width: 200%;
+      margin-top: 10%;
+    }
+
   }
 
-  .image-section {
-    width: 100%;
-  
+  /* //todo==============================case11================= */
+  @media only screen and (max-width: 900px) {
+
+    .message {
+
+      justify-content: center;
+      margin-left: 5%;
+    }
+
+    .message p {
+
+      font-size: 14px;
+      width: 300px;
+    }
   }
-
-  .time-zone-container{
-    width: 200%;
-    flex-direction: column;
-  
-  }
-
-  .date-section{
-    width: 200%;
-    margin-top: 10%;
-  }
- 
-}
-
- /* //todo==============================case11================= */
- @media only screen and (max-width: 900px) {
-
-  .message {
- 
-    justify-content: center;
-    margin-left: 5%;
-}
-
-.message p {
- 
-    font-size: 14px;
-    width: 300px;
-}
- }
 
 
 

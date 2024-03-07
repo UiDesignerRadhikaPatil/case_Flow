@@ -146,7 +146,7 @@ export default function SuperAdminLogin({ toggleLogin }) {
           </div>
           <div className="Forgotpass">
             <h5 style={{ marginTop: "8px" }}>
-              <NavLink to="/forgotpass">Forgot Password</NavLink>
+              <NavLink to="/resetpassword">Forgot Password</NavLink>
             </h5>
           </div>
 

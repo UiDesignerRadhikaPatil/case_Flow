@@ -12,7 +12,7 @@ const MultiStepProgressBar = ({ steps, currentStepForm, stageNames }) => {
 
                         {index < currentStepForm - 1 ? "✔" : index + 1}
                     </div>
-                    <div className="stage-name" style={{  marginTop: "5px" }}>{stageNames[index]}</div>
+                    <div className="stage-name" style={{ marginLeft: "10px", marginTop: "5px" }}>{stageNames[index]}</div>
                 </div>
             ))}
         </div>
